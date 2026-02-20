@@ -1,0 +1,234 @@
+/* ===========================
+   BASE (clair par défaut)
+   =========================== */
+
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+/* Le texte hérite de la couleur définie sur #main-container */
+#main-container, #main-container * {
+  color: inherit;
+}
+
+/* ===========================
+   THEME DARK (data-theme="dark")
+   =========================== */
+
+[data-theme="dark"] #main-container {
+  background: #1e1e1e !important;
+  color: #f5f5f5 !important;
+}
+
+/* (Optionnel) liens */
+[data-theme="dark"] #main-container a {
+  color: #6cb6ff !important;
+}
+
+/* ===========================
+   CARDS (tes blocs .card)
+   =========================== */
+
+.card {
+  background: #f4f6f9;
+  border-radius: 10px;
+}
+
+[data-theme="dark"] .card {
+  background: #2a2a2a !important;
+  border: 1px solid #444 !important;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .card * {
+  color: #f5f5f5 !important;
+}
+
+/* ===========================
+   HISTORIQUE
+   =========================== */
+
+[data-theme="dark"] #log-container {
+  background-color: #2a2a2a !important;
+  border: 1px solid #444 !important;
+  color: #f5f5f5 !important;
+}
+
+/* ===========================
+   DROPDOWN Dash (react-select)
+   =========================== */
+
+[data-theme="dark"] #main-container .Select-control {
+  background-color: #2a2a2a !important;
+  border-color: #444 !important;
+}
+
+[data-theme="dark"] #main-container .Select-value-label,
+[data-theme="dark"] #main-container .Select-input input {
+  color: #f5f5f5 !important;
+}
+
+/* IMPORTANT : placeholder visible (c’est ton bug “Filtre invisible”) */
+[data-theme="dark"] #main-container .Select-placeholder {
+  color: #cfcfcf !important;
+}
+
+/* Menu dropdown */
+[data-theme="dark"] #main-container .Select-menu-outer {
+  background-color: #2a2a2a !important;
+  border: 1px solid #444 !important;
+}
+
+[data-theme="dark"] #main-container .Select-option {
+  background-color: #2a2a2a !important;
+  color: #f5f5f5 !important;
+}
+
+[data-theme="dark"] #main-container .Select-option.is-focused {
+  background-color: #3a3a3a !important;
+}
+
+/* ===========================
+   DATEPICKER (Dash DatePickerRange)
+   =========================== */
+
+[data-theme="dark"] #main-container .DateRangePickerInput {
+  background-color: #2a2a2a !important;
+  border: 1px solid #444 !important;
+}
+
+[data-theme="dark"] #main-container .DateInput_input {
+  background-color: #2a2a2a !important;
+  color: #f5f5f5 !important;
+}
+
+/* Placeholder dates visible */
+[data-theme="dark"] #main-container .DateInput_input::placeholder {
+  color: #cfcfcf !important;
+}
+
+[data-theme="dark"] #main-container .DateRangePickerInput_arrow {
+  color: #f5f5f5 !important;
+}
+
+/* ===========================
+   INPUTS (keyword input, etc.)
+   =========================== */
+
+[data-theme="dark"] #main-container input,
+[data-theme="dark"] #main-container textarea {
+  background-color: #2a2a2a !important;
+  color: #f5f5f5 !important;
+  border: 1px solid #444 !important;
+}
+
+/* ===========================
+   (Optionnel) Table Dash
+   =========================== */
+
+[data-theme="dark"] .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td,
+[data-theme="dark"] .dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  background-color: #1e1e1e !important;
+  color: #f5f5f5 !important;
+}
+
+/* ===== FIX DatePickerRange en dark (fond blanc) ===== */
+[data-theme="dark"] #main-container .DateRangePicker,
+[data-theme="dark"] #main-container .DateRangePickerInput,
+[data-theme="dark"] #main-container .DateRangePickerInput__withBorder,
+[data-theme="dark"] #main-container .DateInput,
+[data-theme="dark"] #main-container .DateInput_input {
+  background-color: #2a2a2a !important;
+  color: #f5f5f5 !important;
+  border-color: #444 !important;
+}
+
+[data-theme="dark"] #main-container .DateRangePickerInput__arrow,
+[data-theme="dark"] #main-container .DateRangePickerInput_arrow,
+[data-theme="dark"] #main-container .DateRangePickerInput_clearDates,
+[data-theme="dark"] #main-container .DateRangePickerInput_calendarIcon {
+  color: #f5f5f5 !important;
+  fill: #f5f5f5 !important;
+}
+
+[data-theme="dark"] #main-container .DateInput_fang {
+  border-bottom-color: #2a2a2a !important;
+}
+
+[data-theme="dark"] #main-container .DateRangePickerInput * {
+  background-color: #2a2a2a !important;
+  color: #f5f5f5 !important;
+}
+/* ===========================
+   DARK - Calendrier popup (react-dates)
+   =========================== */
+
+/* Le conteneur du calendrier (popup) */
+[data-theme="dark"] #main-container .DateRangePicker_picker,
+[data-theme="dark"] #main-container .SingleDatePicker_picker,
+[data-theme="dark"] #main-container .DayPicker,
+[data-theme="dark"] #main-container .DayPicker__withBorder,
+[data-theme="dark"] #main-container .CalendarMonth,
+[data-theme="dark"] #main-container .CalendarMonth_table {
+  background: #1e1e1e !important;
+  color: #f5f5f5 !important;
+  border-color: #444 !important;
+}
+
+/* Header mois + navigation */
+[data-theme="dark"] #main-container .CalendarMonth_caption,
+[data-theme="dark"] #main-container .DayPickerNavigation_button {
+  color: #f5f5f5 !important;
+}
+
+[data-theme="dark"] #main-container .DayPickerNavigation_button {
+  background: #2a2a2a !important;
+  border: 1px solid #444 !important;
+}
+
+/* Jours (cases) */
+[data-theme="dark"] #main-container .CalendarDay {
+  background: #1e1e1e !important;
+  border: 1px solid #333 !important;
+  color: #f5f5f5 !important;
+}
+
+/* Jours hors mois */
+[data-theme="dark"] #main-container .CalendarDay__outside {
+  color: #777 !important;
+}
+
+/* Jour au survol */
+[data-theme="dark"] #main-container .CalendarDay__hovered_span,
+[data-theme="dark"] #main-container .CalendarDay__hovered_span:hover {
+  background: #2a2a2a !important;
+  color: #f5f5f5 !important;
+}
+
+/* Plage sélectionnée */
+[data-theme="dark"] #main-container .CalendarDay__selected_span,
+[data-theme="dark"] #main-container .CalendarDay__selected_span:hover {
+  background: #0B3D91 !important;
+  color: #ffffff !important;
+}
+
+/* Jour sélectionné (début/fin) */
+[data-theme="dark"] #main-container .CalendarDay__selected,
+[data-theme="dark"] #main-container .CalendarDay__selected:hover {
+  background: #e67e22 !important;
+  color: #ffffff !important;
+}
+
+/* Inputs mois/année en haut du calendrier (si visibles) */
+[data-theme="dark"] #main-container .MonthPicker select,
+[data-theme="dark"] #main-container .YearPicker select {
+  background: #2a2a2a !important;
+  color: #f5f5f5 !important;
+  border: 1px solid #444 !important;
+}
+
+/* Petite flèche (le "triangle") du popup */
+[data-theme="dark"] #main-container .DayPickerKeyboardShortcuts_show__bottomRight::before {
+  border-right: 33px solid #2a2a2a !important;
+}
